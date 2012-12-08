@@ -45,7 +45,16 @@
       .marketing p + h4 {
         margin-top: 28px;
       }
+      
+      .largerParagraph {
+    	font-size: 18px;
+    	}
     </style>
+    <style type="text/css">
+/*<![CDATA[*/
+  ol{margin:0;padding:0}.c10{background-color:#ffffff}.c1{height:11pt;direction:ltr}.c0{text-indent:36pt;direction:ltr}.c13{text-align:right}.c3{font-weight:bold}.c6{background-color:#ffff00}.c4{margin-left:36pt}.c8{margin-left:72pt}.c11{color:#ff00ff}.c9{font-style:italic}.c5{text-decoration:underline}.c2{direction:ltr}.c12{background-color:#ffffff}.c7{text-indent:36pt}.title{padding-top:24pt;line-height:1.15;text-align:left;color:#000000;font-size:36pt;font-family:"Arial";font-weight:bold;padding-bottom:6pt}.subtitle{padding-top:18pt;line-height:1.15;text-align:left;color:#666666;font-style:italic;font-size:24pt;font-family:"Georgia";padding-bottom:4pt}li{color:#000000;font-size:11pt;font-family:"Arial"}p{color:#000000;font-size:11pt;margin:0;font-family:"Arial"}h1{padding-top:24pt;line-height:1.15;text-align:left;color:#000000;font-size:18pt;font-family:"Arial";font-weight:bold;padding-bottom:6pt}h2{padding-top:18pt;line-height:1.15;text-align:left;color:#000000;font-size:14pt;font-family:"Arial";font-weight:bold;padding-bottom:4pt}h3{padding-top:14pt;line-height:1.15;text-align:left;color:#666666;font-size:12pt;font-family:"Arial";font-weight:bold;padding-bottom:4pt}h4{padding-top:12pt;line-height:1.15;text-align:left;color:#666666;font-style:italic;font-size:11pt;font-family:"Arial";padding-bottom:2pt}h5{padding-top:11pt;line-height:1.15;text-align:left;color:#666666;font-size:10pt;font-family:"Arial";font-weight:bold;padding-bottom:2pt}h6{padding-top:10pt;line-height:1.15;text-align:left;color:#666666;font-style:italic;font-size:10pt;font-family:"Arial";padding-bottom:2pt}
+  /*]]>*/
+  </style>
     <link href="./assets/css/bootstrap-responsive.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -56,66 +65,1103 @@
   </head>
 
   <body>
-
+  
     <div class="container-narrow">
 
-      <div class="masthead">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#bib">Bibliography</a></li>
-        </ul>
-        <h3 class="muted">Bitcoin</h3>
+   <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active">
+                <a href="#">Home</a>
+              </li>
+              <li class="">
+                <a href="#bib">Bibliography</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
+    </div>
 
       <hr>
 
       <div class="jumbotron" style="text-align:left">
-        <h1>Under construction</h1>
+        <h1>The Rise and Ethics of Bitcoin</h1>
       </div>
 
       <hr>
       
       <script async class="speakerdeck-embed" data-id="4e33562022e00130b49722000a1e83c3" data-ratio="1.2994923857868" src="//speakerdeck.com/assets/embed.js"></script>
+		
 
-      <div class="row-fluid marketing">
+      <!--<div class="row-fluid marketing">
         <div class="span12">
-          <p style="font-size:18px">In his address last month to the DeepSec Security Conference at the Imperial Riding School in Vienna, Austria, Jon Matonis, e-Money researcher and secretary of the Bitcoin Foundation claimed that the fiat currencies of the world were about to face a peer-to-peer network disruptor equivalent to the upheaval that the music and movie industries faced about a decade earlier.  The question circulating through many people’s minds has been:</p>
-        	<h3>“Is Bitcoin the digital cash that will make this a reality?”</h2>
-        	<p style="font-size:18px">BitTorrent turned the music and movie industries on their heads and profoundly affected digital content distribution through the ability of users to rapidly exchange files over a peer-to-peer internet network. If Bitcoin fits this analogy, then it has the chance to disrupt currency and the world as we know it with incredible destructive and constructive power.
-        	</p>
-        	<h3>Examining the fundamental ethical and policy implications of bitcoin are crucial towards navigating it to its potential success and directing its power for the good of society.</h2>
-
+        	<h2>Satoshi Nakamoto and the Creation of Bitcoin</h2>
+          <p class="largerParagraph">&emsp;&emsp;On November 1, 2008, a man by the name of Satoshi Nakamoto released a research paper, describing the construction of a digital currency he called “Bitcoin” (Nakamoto).  In the years before this date, others had attempted to create other forms of digital currency, including bit gold, RPOW, and b-money (Matonis).  Unfortunately, in the world of digital currency, the money was just that—digital.  This created a problem: if the money was simply information, what prevents people from copying this information and re-spending the same dollar continuously?  Many of the previous versions of digital currency responded by keeping a real-time ledger of all transactions that occur.  However, while this prevented fraud, it also required a trusted third party to administer the ledger. This crucial weakness made such systems weak to both attackers and governments seeking to shut them down.</p>
+        	<br/>
+        	<p class="largerParagraph">&emsp;&emsp;Nakamoto responded by publicly distributing the ledger.  Transactions were broadcasted to the network through a uniquely designed process.  Computers running the software would compete to solve cryptographic puzzles that contained data from several transactions.  The first person to crack the puzzle would be awarded a specific number of bitcoins and the associated block of transactions were added to the chain (Nakamoto). Users would be able to gain bitcoins, through bitcoin mining, by solving the cryptographic puzzles that protect the block of transaction information.  The size of each block bounty would halve every 210,000 blocks, starting at 50 and then decreasing to 25, etc.The currency would reach a preordained limit of 21 million bitcoins around 2140 (Gustke).</p>
+        	<br/>
+        	<p class="largerParagraph">&emsp;&emsp;On January 3, 2009  Nakamoto himself mined the first 50 bitcoins, deemed the genesis block before mysteriously disappearing (“How Bitcoin Works”). Only three years later, Bitcoin has become one of the largest distributed computing networks in the world and represents a currency market cap equivalent to over 140 million US dollars (Matonis and Greenfield).</p>
+			<br/>
+			<p class="largerParagraph">&emsp;&emsp;Bitcoin is a decentralized digital currency that is currently the largest alternative (non-fiat currency*) in the world with a market cap of over 140 millions USD at the time of this writing and sustained by a distributed computing peer-to-peer network of machines (Matonis).</p>
         </div>
     </div>
     
     <hr>
     
     <div class="row-fluid marketing"> 
-
-        
         <div class="span12">
-        	<h1>The Chaotic and Exciting World of Bitcoin</h1>
-        	<p style="font-size:18px"> Answering these important ethical and policy questions is challenging. The bitcoin world is rapidly growing and changing. The first bitcoins were only mined in 2009 (“Genesis Block”). Less than four years later, the bitcoin distributed computing network is one of the largest distributed computing networks in the world that eclipses funded projects such as SETI decades its superior (Matonis)
-			</p>
-			<h3>There are currently over $140 million of bitcoins in circulation today (“Market Circulation”)</h3>
-			<p style="font-size:18px">The rapid rise of bitcoin that makes the bitcoin world precisely so exciting and interesting, also makes it vast, complex, and chaotic. Reuters has called it “the Wild West of finance” as an army of sites of varying credibility have popped up to emulate bitcoin copies financial industry services (O’Leary).  In the bitcoin world, venture backed startups like CoinLab (63) run alongside 17-year-old-run exchanges like Bitconica (O’Leary); Bitcoin monetary activists fight central bank tyranny in the same online forums as questionable characters executing ponzi schemes (“Bitcoin ponzi scheme - investors lose $5 million USD in online hedge fund.”); the largest exchange is a converted Magic The Gathering Trading Card hub (Mt. Gox Company Overview); and the latest news and cutting edge opinion rests not only in academic cryptography papers, but on community sites, in online forum posts, and within the blogs of authors with unverified credentials.
+        	<h2>Bitcoin Basics</h2>
+        	<p class="largerParagraph">&emsp;&emsp;Bitcoin is a decentralized, non-fiat currency that is sustained by a distributed computing peer-to-peer network of machines (Matonis).  The currency is anonymous, untraceable, nontaxable, and decentralized.  Anonymity is achieved as the users personal identities are not connected in any way with their bitcoin wallets or their transactions online.  Bitcoin transactions are untraceable because of the anonymity of the transactions.  The payer generates a signature with a private key and then the transaction is checked with a public key.  Thus, while transactions are anonymous and untraceable, they are not confidential.  The entire Bitcoin network is able to access the various transactions that occur around the world.  In fact, users throughout the bitcoin network verify the transactions and are then rewarded with bitcoins themselves.  Bitcoins are nontaxable simply because the users are anonymous and the transactions are untraceable.  Finally, bitcoins are decentralized, in that no governing body presides over this currency.  However, the Bitcoin foundation is in charge of the code and hashing algorithms that bring bitcoins to life.
 			</p>
         </div>
       </div>
 
       <hr>
+      
+    <div class="row-fluid marketing"> 
+        <div class="span12">
+        	<h2>Bitorrent of the Currency World: Bitcoin Ethics and Policies</h2>
+        	<h3><em>“Digital cash is to legal tender as BitTorrents are to copyrights.”</em></h3>
+        	<p class="largerParagraph">&emsp;&emsp;-John Matonis, Bitcoin Foundation, Vienna Austria November 2012</p>
+        	</br>
+        	<p class="largerParagraph">&emsp;&emsp;In his November 2012 address to the DeepSec Security Conference at the Imperial Riding School in Vienna, Austria, Jon Matonis, e-Money researcher and secretary of the Bitcoin Foundation claimed that the fiat currencies of the world were about to face a peer-to-peer network disruptor equivalent to the upheaval that the music and movie industries faced about a decade earlier.  The question circulating through many people’s minds has been:
+			</p>
+			</br>
+			<p class="largerParagraph"><em>“Is Bitcoin the digital cash that will make this a reality?”</em></p>
+			</br>
+			<p class="largerParagraph">BitTorrent turned the music and movie industries on their heads and profoundly affected digital content distribution through the ability of users to rapidly exchange files over a peer-to-peer internet network. If Bitcoin fits this analogy, then it has the chance to disrupt currency and the world as we know it with incredible destructive and constructive power. 
+			<strong>Examining the fundamental ethical and policy implications of bitcoin are crucial towards navigating it to its potential success and directing its power for the good of society.
+			</strong>
+			</p>
+        </div>
+      </div>
+
+      <hr>
+      
+    <div class="row-fluid marketing"> 
+        <div class="span12">
+        	<h2>The Chaotic and Exciting World of Bitcoin</h2>
+        	<h3><em>“Digital cash is to legal tender as BitTorrents are to copyrights.”</em></h3>
+        	<p class="largerParagraph">&emsp;&emsp;-John Matonis, Bitcoin Foundation, Vienna Austria November 2012</p>
+        	</br>
+        	<p class="largerParagraph">&emsp;&emsp;In his November 2012 address to the DeepSec Security Conference at the Imperial Riding School in Vienna, Austria, Jon Matonis, e-Money researcher and secretary of the Bitcoin Foundation claimed that the fiat currencies of the world were about to face a peer-to-peer network disruptor equivalent to the upheaval that the music and movie industries faced about a decade earlier.  The question circulating through many people’s minds has been:
+			</p>
+			</br>
+			<p class="largerParagraph"><em>“Is Bitcoin the digital cash that will make this a reality?”</em></p>
+			</br>
+			<p class="largerParagraph">BitTorrent turned the music and movie industries on their heads and profoundly affected digital content distribution through the ability of users to rapidly exchange files over a peer-to-peer internet network. If Bitcoin fits this analogy, then it has the chance to disrupt currency and the world as we know it with incredible destructive and constructive power. 
+			<strong>Examining the fundamental ethical and policy implications of bitcoin are crucial towards navigating it to its potential success and directing its power for the good of society.
+			</strong>
+			</p>
+        </div>
+      </div>-->
+    
+ <div class="row-fluid marketing"> 
+<div class="span12">
+ <div class="c10">
+  <p class="c1"></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c3 c5">The Rise and Ethics of Bitcoin</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c3 c5">Introduction</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c3">Satoshi Nakamoto and the Creation of Bitcoin</span></p>
+
+  <p class="c2"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;On November 1, 2008, a man
+  by the name of Satoshi Nakamoto released a research paper, describing the construction
+  of a digital currency he called &ldquo;Bitcoin&rdquo; (Nakamoto). &nbsp;In the years
+  before this date, others had attempted to create other forms of digital currency,
+  including bit gold, RPOW, and b-money (Matonis). &nbsp;Unfortunately, in the world of
+  digital currency, the money was just that&mdash;digital. &nbsp;This created a problem:
+  if the money was simply information, what prevents people from copying this information
+  and re-spending the same dollar continuously? &nbsp;Many of the previous versions of
+  digital currency responded by keeping a real-time ledger of all transactions that
+  occur. &nbsp;However, while this prevented fraud, it also required a trusted third
+  party to administer the ledger. This crucial weakness made such systems weak to both
+  attackers and governments seeking to shut them down.</span></p>
+
+  <p class="c2"><span>&nbsp; &nbsp; &nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nakamoto responded by publicly
+  distributing the ledger. &nbsp;Transactions were broadcasted to the network through a
+  uniquely designed process. &nbsp;Computers running the software would compete to solve
+  cryptographic puzzles that contained data from several transactions. &nbsp;The first
+  person to crack the puzzle would be awarded a specific number of bitcoins and the
+  associated block of transactions were added to the chain (Nakamoto). Users would be
+  able to gain bitcoins, through bitcoin mining, by solving the cryptographic puzzles
+  that protect the block of transaction information. &nbsp;The size of each block bounty
+  would halve every 210,000 blocks, starting at 50 and then decreasing to 25, etc.The
+  currency would reach a preordained limit of 21 million bitcoins around 2140
+  (Gustke).</span></p>
+
+  <p class="c0"><span>On January 3, 2009 &nbsp;Nakamoto himself mined the first 50
+  bitcoins, deemed the genesis block before mysteriously disappearing (&ldquo;How Bitcoin
+  Works&rdquo;). Only three years later, Bitcoin has become one of the largest
+  distributed computing networks in the world and represents a currency market cap
+  equivalent to over 140 million US dollars (Matonis and Greenfield).</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span>Bitcoin is a decentralized digital currency that is currently the
+  largest alternative (non-fiat currency*) in the world with a market cap of over 140
+  millions USD at the time of this writing and sustained by a distributed computing
+  peer-to-peer network of machines (Matonis).</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c3">Bitcoin Basics</span></p>
+
+  <p class="c2"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bitcoin is a
+  decentralized, non-fiat currency that is sustained by a distributed computing
+  peer-to-peer network of machines (Matonis). &nbsp;The currency is anonymous,
+  untraceable, nontaxable, and decentralized. &nbsp;Anonymity is achieved as the users
+  personal identities are not connected in any way with their bitcoin wallets or their
+  transactions online. &nbsp;Bitcoin transactions are untraceable because of the
+  anonymity of the transactions. &nbsp;The payer generates a signature with a private key
+  and then the transaction is checked with a public key. &nbsp;Thus, while transactions
+  are anonymous and untraceable, they are not confidential. &nbsp;The entire Bitcoin
+  network is able to access the various transactions that occur around the world.
+  &nbsp;In fact, users throughout the bitcoin network verify the transactions and are
+  then rewarded with bitcoins themselves. &nbsp;Bitcoins are nontaxable simply because
+  the users are anonymous and the transactions are untraceable. &nbsp;Finally, bitcoins
+  are decentralized, in that no governing body presides over this currency.
+  &nbsp;However, the Bitcoin foundation is in charge of the code and hashing algorithms
+  that bring bitcoins to life.</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c3">Bitorrent of the Currency World: Bitcoin Ethics and
+  Policies</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c9">&ldquo;Digital cash is to legal tender as BitTorrents
+  are to copyrights.&rdquo;</span></p>
+
+  <p class="c1 c7"></p>
+
+  <p class="c0"><span>-Jon Matonis, Bitcoin Foundation, Vienna Austria November
+  2012</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c0"><span>In his November 2012 address to the DeepSec Security Conference at
+  the Imperial Riding School in Vienna, Austria, Jon Matonis, e-Money researcher and
+  secretary of the Bitcoin Foundation claimed that the fiat currencies of the world were
+  about to face a peer-to-peer network disruptor equivalent to the upheaval that the
+  music and movie industries faced about a decade earlier. &nbsp;The question circulating
+  through many people&rsquo;s minds has been:</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c9">&ldquo;Is Bitcoin the digital cash that will make this a
+  reality?&rdquo;</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c0"><span>BitTorrent turned the music and movie industries on their heads and
+  profoundly affected digital content distribution through the ability of users to
+  rapidly exchange files over a peer-to-peer internet network. If Bitcoin fits this
+  analogy, then it has the chance to disrupt currency and the world as we know it with
+  incredible destructive and constructive power.</span> <span class="c3 c9">Examining the
+  fundamental ethical and policy implications of bitcoin are crucial towards navigating
+  it to its potential success and directing its power for the good of society.</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c3">The Chaotic and Exciting World of Bitcoin</span></p>
+
+  <p class="c0"><span>Answering these important ethical and policy questions is
+  challenging. The bitcoin world is rapidly growing and changing. The first bitcoins were
+  only mined in 2009 (&ldquo;Genesis Block&rdquo;). Less than four years later, the
+  bitcoin distributed computing network is one of the largest distributed computing
+  networks in the world that eclipses funded projects such as SETI decades its superior
+  (Matonis). There are currently over $140 million of bitcoins in circulation today
+  (&ldquo;Market Circulation&rdquo;).</span></p>
+
+  <p class="c0"><span>The rapid rise of bitcoin that makes the bitcoin world precisely so
+  exciting and interesting, also makes it vast, complex, and chaotic. Reuters has called
+  it &ldquo;the Wild West of finance&rdquo; as an army of sites of varying credibility
+  have popped up to</span> <span>emulate financial industry</span> <span>services with
+  Bitcoin equivalents (O&rsquo;Leary). &nbsp;In the bitcoin world, venture backed
+  startups like CoinLab (CoinLab) run alongside 17-year-old-run exchanges like Bitcoinica
+  (O&rsquo;Leary); Bitcoin monetary activists fight central bank tyranny in the same
+  online forums as questionable characters executing ponzi schemes (&ldquo;Bitcoin ponzi
+  scheme - investors lose $5 million USD in online hedge fund.&rdquo;); the largest
+  exchange is a converted Magic The Gathering Trading Card hub (</span><span class=
+  "c9">Mt. Gox Company Overview</span><span>); and the latest news and cutting edge
+  opinion rests not only in academic cryptography papers, but on community sites, in
+  online forum posts, and within the blogs of authors with unverified
+  credentials.</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span>In order to discuss the i</span><span>mportant
+  c</span><span>omputer ethics and policy questions that bitcoin raises, we&rsquo;ll
+  attempt to give an overview of bitcoin and what makes it unique as a digital currency
+  before providing an opportunity to discuss the fascinating implications of these
+  qualities.</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c3 c5">Concepts</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c3">What Makes Bitcoin Unique as a Digital
+  Currency?</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c0"><span>Jon Matonis, secretary of the Bitcoin Foundation that serves as a
+  custodian of the open source software that Bitcoin rests upon explains
+  bitcoin:</span></p>
+
+  <p class="c2"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+  <p class="c4 c2"><span>&ldquo;</span><span class="c9">Bitcoin is a decentralised
+  electronic cash system using peer-to-peer networking, digital signatures and
+  cryptographic proof to enable irreversible payments between parties without relying on
+  trust.&rdquo;</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c0"><span>Breaking down his statement gives us an ideal of what makes bitcoin
+  unique as a digital currency. While this site goes further in depth into the validity
+  of each characteristic and bitcoin&rsquo;s technology, at a high level these qualities
+  are the root of bitcoin&rsquo;s ethical and policy implications:</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c4 c2"><span>Decentralized Control</span></p>
+
+  <p class="c4 c2"><span>No Central Authority</span></p>
+
+  <p class="c4 c2"><span>Dependency on Technology and Cryptography</span></p>
+
+  <p class="c4 c2"><span>Predictable and Limited Supply</span></p>
+
+  <p class="c4 c2"><span>Freeze-Proof Accounts</span></p>
+
+  <p class="c2 c4"><span>Low Transfer Rates</span></p>
+
+  <p class="c4 c2"><span>Anonymity</span></p>
+
+  <p class="c4 c2"><span>Untrackable and Untaxable</span></p>
+
+  <p class="c4 c2"><span>Variable Barriers to Entry</span></p>
+
+  <p class="c1 c4"></p>
+
+  <p class="c2"><span class="c3">Decentralized Control</span></p>
+
+  <p class="c0"><span>Bitcoins are created and sustained using a peer-to-peer network of
+  computers that compute cryptographic hashes that provide bitcoin authenticity. The
+  network consists of every bitcoin user who has a full wallet program running on their
+  computer in addition to super-users &ldquo;miners&rdquo; who dedicate special hardware
+  to contribute extra computing power to the network that is rewarded with a trickle of
+  bitcoins. The network as a whole supports the creation of new bitcoins and all bitcoin
+  transactions. In theory, no single entity controls bitcoin. This has a number of
+  implications:</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c3">No Central Authority</span></p>
+
+  <p class="c0"><span>Every fiat currency in the world is issued by a central sovereign
+  entity and depends on that entity to maintain its value. As a result, the currency is
+  under the control of that central authority. Online currencies such as Voucher-Safe,
+  Zynga dollars, or Facebook Credits all also depend on a central authority
+  (&ldquo;Virtual Currency Schemes&rdquo;). Furthermore, transactions occurring online
+  with those currencies must all go directly through a single source that acts as a
+  trusted intermediary.</span></p>
+
+  <p class="c2"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;One of the largest
+  draws for bitcoin users is that the existence of bitcoin does not depend on a central
+  authority (</span><span>Yang</span><span>). Since the thousands of computers on the
+  bitcoin network collectively sustain the currency, no one authority has the power to
+  control the currency. A central authority cannot manipulate the currency, nor is the
+  currency vulnerable to an attack on a single entity.</span></p>
+
+  <p class="c2"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The theoretical
+  lack of a central authority raises huge ethical implications for bitcoin. Furthermore,
+  the advent of massive &ldquo;mining pools&rdquo; that wield entire quarters of the
+  computing power on the bitcoin network and the custodial role of the Bitcoin Foundation
+  for the bitcoin source code leads some to debate the true level of bitcoin&rsquo;s
+  decentralization.</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c3">Dependency on Technology and Cryptography</span></p>
+
+  <p class="c2"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instead of relying
+  on a central authority for it legitimacy, Bitcoin rests on technology and cryptography.
+  In discussing this technology, other sections explain how this is potentially one of
+  Bitcoin&rsquo;s greatest strengths and biggest weaknesses. Technology and cryptography
+  attempts to circumvent the unpredictability and insecurity of human behavior, but it
+  comes at the cost of vulnerability when either of the two pillars fail.</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c3">Predictable and Limited Supply</span></p>
+
+  <p class="c0"><span>Because the supply of Bitcoins is determined by an consistent
+  algorithm and not a central authority, the supply of bitcoin is regular and predictable
+  (Barber et al.). Fiat currencies usually experience inflation (a decrease in value
+  unit) due to the decisions of a central issuing authority to issue more monetary units.
+  In contrast, the steady number of bitcoins in circulation will eventually reach an
+  algorithmically determined ceiling and experience deflation (an increase in value per a
+  unit). However, bitcoins make up for their numerical predictability with the wild
+  fluctuations in their exchange value with mainstream fiat currencies like the US dollar
+  as the currency grows with more adopters. The fixed number of total bitcoin units has
+  important policy implications for the long term value of the currency and for entities
+  that hold it.</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c3">Freeze-Proof Accounts</span></p>
+
+  <p class="c2"><span class=
+  "c3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>Individual bitcoin
+  wallets are simply encrypted files stored on a computer or in &ldquo;cold
+  storage&rdquo; - storage which is offline, such as a USB drive or printed paper - that
+  allows a user to transfer bitcoins (Matonis). The actual record of bitcoins themselves
+  are stored in every node of the bitcoin network. Other online currencies depend on a
+  central authority to keep records. This allows a user&rsquo;s account to be
+  &ldquo;frozen&rdquo; and confiscated by a third party, such as a government agency,
+  that wields power over the central trusted intermediary that holds the account
+  information. With bitcoin&rsquo;s distributed nature a bitcoin wallet cannot be
+  controlled by anyone but the person with its associated encryption key (&ldquo;How
+  Bitcoin Works&rdquo;).</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c3">Low Transfer Rates</span></p>
+
+  <p class="c2"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transferring
+  bitcoin is either free or requires a minimal fee determined by the open source bitcoin
+  software for the machines contributing to the processing power of the network based on
+  the load of the network at the time of the transfer. Rates are independent of an
+  arbitrary central authority and are not burdened by the costs of banks or the
+  transportation of moving physical assets.</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c3">Anonymity</span></p>
+
+  <p class="c0"><span>When a bitcoin transaction is made, the wallet addresses and
+  amounts involved are broadcast to the entire network of bitcoin nodes. Public transfers
+  are how the distributed bitcoin network verifies transactions and prevents malicious
+  users from double spending bitcoins. However, while the addresses are public, a user
+  can generate a virtually unlimited number of addresses. This means that unless a user
+  publicly exposes their wallet address, their wallets are theoretically detached from
+  their identities.</span></p>
+
+  <p class="c0"><span>The decoupling of bitcoin wallets from owner&rsquo;s identities
+  adds an extra layer of privacy to the system. Users of traditional financial systems
+  usually depend on a third party, like a Swiss bank, to keep their accounts and
+  identities private. However, this leaves depositors at risk to exposure if the third
+  party is compromised or coerced. Bitcoin wallets on the other hand allow the account
+  owner more responsibility over their privacy.</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c3">Untrackable and Untaxable</span></p>
+
+  <p class="c0"><span>Unlike existing payment systems that depend on central trusted
+  intermediaries, such as PayPal, bitcoin transactions are theoretically
+  &ldquo;untraceable&rdquo; (&ldquo;How Bitcoin Works&rdquo;). Every coin transaction is
+  seen and verified by the network as a whole, but because the ownership of addresses is
+  secret, there is no reasonable way to know where and to whom bitcoins are being
+  transferred (Ron). Some academics have been able to use advanced math to trace some
+  bitcoin origins of incautious owners, but the degree of difficulty might be equated to
+  tracking marked physical US dollars.</span></p>
+
+  <p class="c0"><span>&nbsp; There is no way to directly intercept bitcoin transactions.
+  This means that it is impossible for a government to directly tax bitcoin transactions
+  since the transactions cannot be traced from person to person. Other sections discuss
+  how the government can still tax and regular Bitcoin related activities, but pure
+  digital Bitcoins themselves are by nature untaxable and unregulatable
+  (Jackson).</span></p>
+
+  <p class="c0"><span>These two traits of Bitcoin make it both an idea means for the
+  informal economy of the world which depends on cash like transactions of over 10
+  trillion US dollars a year (&ldquo;There is Big Money in the Underground
+  Economy&rdquo;). It also makes the currency a viable vehicle for illicit purposes such
+  as money laundering and tax evasion.</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c3">Variable Barriers to Entry</span></p>
+
+  <p class="c0"><span>Technically Bitcoin has a very low barrier to entry. A potential
+  participant in the Bitcoin network only needs a computer and an internet connect to
+  download a free copy of Bitcoin open source software to receive or send Bitcoins.
+  However, the nascent adoption of Bitcoin means that despite its rapid growth, Bitcoin
+  requires full participants in its economy to have a level of technological savvy and
+  Bitcoin knowhow above the average computer user. Understanding how to use the software
+  properly to protect one&rsquo;s privacy is nontrivial.</span></p>
+
+  <p class="c0"><span>Furthermore, there is no regulation of site dedicated to Bitcoin.
+  An unwary entrant can easily fall prey to malicious members among the many benevolent
+  ones of the Bitcoin community if they are not knowledgeable and careful. Due to its
+  early stages and lack of central issuing authority, Bitcoin&rsquo;s exchange rate with
+  traditional fiat-currencies still fluctuates dramatically. Thus, simply buying Bitcoins
+  can be risky for the unqualified user.</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c3 c5">Context and Motivations</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c3">The Ethical Motivations for Bitcoin</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c3">Bitcoin and the Ethic of a Cashless Society</span></p>
+
+  <p class="c0"><span>Among the many global trends that have motivated bitcoin. One of
+  the most prominent and poignant is the rise of the &ldquo;cashless society&rdquo; and
+  the ethical and policy implications it has for people making transactions around the
+  world. Understanding the &ldquo;cashless society&rdquo; is fundamental to understanding
+  the ethical context that serves as one of the key motivators for bitcoin&rsquo;s
+  existence.</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c3">What is a Cashless Society?</span></p>
+
+  <p class="c0"><span>In the world of online transactions that bitcoin inhabits, a hot
+  topic of discussion is the &ldquo;cashless society&rdquo; (Stevenson). When
+  commentators talk of a &ldquo;cashless society&rdquo; they refer to the increasing
+  trend of fiat currency transactions moving into the digital world and away from
+  physical cash and coins. The movement can be traced to the advent of credit cards in
+  the 1950s, but increasingly transactions are moving to the Internet
+  (Stephey).</span></p>
+
+  <p class="c0"><span>In many ways, many of us in the developed world are already living
+  in a near cashless society. Online shoppers make virtually all of their transactions on
+  sites like Amazon, Ebay, and PayPal through online banking or credit lines without even
+  touching physical cards. In the physical world, companies like Square that helps
+  merchant more easily accept credit cards on mobile devices, make it easier and easier
+  to go without ever having to touch paper or metal.</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c3">Benefits of a Cashless Society</span></p>
+
+  <p class="c0"><span>The benefits of a cashless society are convenience, efficiency, and
+  record keeping. Jon Matonis of the Bitcoin Foundation notes that a completely cashless
+  society seems to have a number of benefits:</span></p>
+
+  <p class="c2"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+  <p class="c0"><span>-No inconvenient bulky paper cash or coins</span></p>
+
+  <p class="c2"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-No anonymous
+  transactions</span></p>
+
+  <p class="c0"><span>-No untraceable transactions</span></p>
+
+  <p class="c0"><span>-No parallel or &lsquo;grey&rsquo; economy</span></p>
+
+  <p class="c0"><span>-No costs to produce cash and move it</span></p>
+
+  <p class="c0"><span>-No missing taxes</span></p>
+
+  <p class="c2">
+  <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Matonis)</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c3">Convenience</span></p>
+
+  <p class="c2"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At first glance,
+  eliminating cash in favor of online transactions seems wholly positive. Cash is more
+  convenient for the consumer. Physical currency like the US dollar is clunky and
+  expensive to produce. &nbsp;Rather than carrying around physical units of value, it is
+  far easier to have an account in cyberspace that allows you to track and exchange your
+  assets.</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c3">Security</span></p>
+
+  <p class="c0"><span>Because participants are attached to their identities in a cashless
+  society, transactions can be made with a level of trust between two parties who are
+  both vetted by the the online entity or service they are transacting through. Because
+  all transactions are tracked, users can have greater assurance that any attempts to
+  steal their assets will leave a clear trail of transactions online to follow.
+  &nbsp;</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c3">Legitimacy</span></p>
+
+  <p class="c0"><span>Trusted central intermediaries that facilitate the cashless ideal,
+  such as PayPal, can also serve as monitors against illicit transactions. If all
+  monetary transactions are tracked and attached to identities of participants, all
+  transactions have to be legitimate. Without cash it is impossible for the parallel
+  &ldquo;grey&rdquo; or &ldquo;under the table&rdquo; and &ldquo;black&rdquo; economies
+  to operate. In a cashless society, businesses and workers that illegally circumvent
+  taxes by taking &ldquo;cash payments&rdquo; can be much more easily caught when their
+  transaction histories are all tracked. More importantly, more nefarious organizations,
+  such as drug cartels, thrive on the anonymity and untraceability of cash
+  transactions.</span> <span>In a completely, cashless society preventing large illegal
+  transactions and money laundering when it can be monitored online is much easier than
+  when it can happen offline through a physical exchange. &nbsp;Tracking transactions
+  gives central authorities more tools to eliminate such activity.</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c3">Dangers of a Cashless Society</span></p>
+
+  <p class="c2"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;While there are
+  many benefits to the cashless society the world is moving towards, a cashless society
+  is a double edged sword. In fact, many of the qualities that make a cashless society so
+  convenient, also make it so dangerous for abuse. The ethics of whether a cashless
+  society is a better society become much more murky. Jon Matonis of the Bitcoin
+  Foundation notes the following dangers when a society removes cash:</span></p>
+
+  <p class="c2"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+  <p class="c2"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-All personal
+  transactions can be traced</span></p>
+
+  <p class="c2"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Users become
+  completely dependent on electronics and networks</span></p>
+
+  <p class="c2"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Central
+  authorities have complete control over all currency</span></p>
+
+  <p class="c2"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Tax collection is
+  inescapable</span></p>
+
+  <p class="c2"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-The shadow economy
+  is completely eliminated</span></p>
+
+  <p class="c2">
+  <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Matonis)</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c3">Privacy</span></p>
+
+  <p class="c0"><span>One of the largest concerns of a cashless society is the privacy of
+  transactions. The migration of fiat currency transactions online does not just mean
+  that drug cartel money is under scrutiny. It also means that the financial privacy of
+  innocent individuals is at risk to exposure by the central authorities through which
+  transactions operate. It is no secret that the government closely monitors banking
+  transactions with the help of companies such as Palantir that analyze data. If all
+  transactions move online, there is nothing that central authorities will not
+  know.</span></p>
+
+  <p class="c0"><span>Financial history can be extremely personal information. Does a
+  teenager really want someone to know they recently bought birth control pills? How
+  public would a patient want to make their purchase of an HIV drug? Removing cash,
+  removes an avenue through which a spender can keep such purchases private.</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c3">Abuse of Central Authority</span></p>
+
+  <p class="c2"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Financial privacy
+  from authority is also a primary concern because of the potential for authoritative
+  abuse. In an idyllic world, a citizen of a cashless society who does no wrong should
+  not have to worry about running into trouble if an authority like PayPal or the
+  government</span> <span>benevolently monitors their financial history.</span></p>
+
+  <p class="c0"><span>However, what if a central authority is not so benevolent. Movement
+  towards completely tracked and identified transactions allows for closer monitoring of
+  citizens that can be abused by central authorities. Authoritarian governments can use
+  such knowledge to suppress funding for social movements or track down opposition
+  movements. Central sources that control transactions that can easily be shut down,
+  coerced, or manipulated by central authorities to arbitrarily deny users access to
+  their funds.</span></p>
+
+  <p class="c0"><span>Furthermore, as currently benevolent governments gain more
+  authority into the lives of individuals, when do they cross the line and resemble
+  authoritarian regimes themselves? Resentment against unjust tax collection was one of
+  the compelling reasons for the American Revolution. In this context, the inescapability
+  of tax collection under a cashless society strikes as poignantly foreboding.</span></p>
+
+  <p class="c1 c7"></p>
+
+  <p class="c2"><span class="c3">Elimination of Informal Commerce</span></p>
+
+  <p class="c2"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Perhaps the most
+  overlooked danger of the move towards a cashless society is the loss of the informal
+  economy - also known as the &ldquo;grey&rdquo; or &ldquo;shadow&rdquo; economy. While
+  eliminating cash dependent and dangerous black market activity, such as drug and
+  weapons dealing, has few detractors, the informal economy that operates in cash is of a
+  very different nature.</span></p>
+
+  <p class="c0"><span>The informally economy is all &ldquo;under the table&rdquo; cash
+  activity that is not tracked by official channels. This includes street sellers&rsquo;
+  commerce, unreported waitress&rsquo;s tips, and informal exchange of money for small
+  duties. In the developing world, the growth of the informal economy is usually one of
+  the key driving economic factors in development (&ldquo;There is Big Money in the
+  Underground Economy.&rdquo;). Around the world, it is estimated that the informal
+  economy is 10 trillion USD of transactions annually.</span></p>
+
+  <p class="c0"><span>Many of the poorest parts of society depend on these informal
+  transactions that go untaxed and untracked to survive. If society moved to become
+  completely cashless, this informal sector that depends on cash would be eliminated,
+  potentially stifling economic growth and widening the gap between people with the means
+  to engage in online, taxed transactions in the informal economy, and those who cannot
+  afford to do so. The reality of a cashless society calls into question the ethics of
+  whether or not shaking out the shadow economy is worth the societal cost to its
+  participants even if their engagement is technically illegal.</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c3">A Personal Ethical Dilemma</span></p>
+
+  <p class="c2"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The fundamental
+  danger of relinquishing physical cash to the cashless society is that the participants
+  in the new economy no longer have a valuable avenue in cash to exercise their privacy,
+  anonymity, and control over the value they own. Participants are morally faced with the
+  ethical dilemma of whether or not the dangers of a cashless society are worth the
+  benefits. However, in reality the individual has little ability to affect the momentum
+  of the cashless movement, and therefore they are forced to confront the dangers of its
+  adoption.</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c3">Solution: Bitcoin = Digital Cash</span></p>
+
+  <p class="c0"><span>Bitcoin was created as an answer to this ethical dilemma of the
+  cashless society. Bitcoin is a digital cash. According to Bitcoin Foundation Secretary,
+  Jon Matonis, digital cash is an attempt to emulate the characteristics of</span>
+  <span>physical currency in the digital world. It particularly aims to</span>
+  <span>safeguard financial privacy, untraceability, and anonymity</span>
+  <span>(&ldquo;There is Big Money in the Underground Economy.&rdquo;). The details of
+  bitcoin&rsquo;s implem</span><span class="c12">entation and the ethical and policy
+  issues that surround its place in society are discussed in other areas of this site.
+  However, understanding that they also exist in the context of our near cashless society
+  gives their relation to bitcoin a deeper meaning. &nbsp;In an effort to serve as the
+  &ldquo;digital cash&rdquo; of the &ldquo;physical cashless society&rdquo; bitcoin at
+  its core is an instrument of ethics.</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c3">Technology Behind the Security and Privacy of
+  Bitcoin</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c3">Making Trust Obsolete</span></p>
+
+  <p class="c0"><span>In the priming paper on Bitcoin in which Satoshi Nakamoto explains
+  the design and purpose of Bitcoin, he states that the current financial system at large
+  &ldquo;suffers from the &nbsp;inherent &nbsp;weaknesses &nbsp;of &nbsp;the &nbsp;trust
+  &nbsp;based &nbsp;model.&rdquo; Specifically, the &ldquo;trust based model&rdquo;
+  creates a number of inefficiencies in financial transactions, such as an inability to
+  make non-reversible payments&mdash;so long as payments can be traced back to the those
+  who interacted to make them, trust is necessary in order to prevent fraudulent
+  transactions and merchants must demand more information of their customers than really
+  necessary (Nakamoto).</span></p>
+
+  <p class="c0"><span>What Nakamoto desired was an online replacement for physical
+  currency, which is not traceable and requires no trust between those involved in the
+  payment, as the currency is worth exactly what it says without strings attached. At the
+  time of writing, Nakamoto noted that &ldquo;no mechanism exists to make payments over a
+  communications channel without a trusted party.&rdquo; He went on to state that
+  &ldquo;&hellip;what is needed is an electronic payment system based on cryptographic
+  proof instead of trust, allowing any two willing parties to transact directly with each
+  other without the need for a trusted third party&rdquo; (Nakamoto).</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c3">Cryptographic Hashing and Network
+  Verification</span></p>
+
+  <p class="c0"><span>To understand the ethical and policy implications of Bitcoin, it is
+  important to understand how the technology behind Bitcoin allows for secure
+  transactions of currency while maintaining anonymity and integrity of the transaction.
+  Specifically, a Bitcoin transaction relies on a cryptographic hash that verifies a
+  transaction using the original Bitcoin holder&rsquo;s private key to generate a
+  signature. That signature can be verified with the holder&rsquo;s public key
+  (Nakamoto).</span></p>
+
+  <p class="c0"><span>Whenever a Bitcoin transaction is made, it is signed with the
+  sender&rsquo;s private key and then publicly announced to the rest of the network so
+  that it can be verified by the rest of the system using the block&rsquo;s public key.
+  &nbsp;An individual Bitcoin stores a chain of these transaction signatures, which is
+  essentially a history of all the transactions a single Bitcoin has been through. This
+  ensures uniqueness of Bitcoins, as each one has a unique history that cannot be
+  duplicated easily (Nakamoto).</span></p>
+
+  <p class="c0"><span>Additionally, to check if an individual was involved in a
+  transaction, one can simply compare the electronic signature generated by their private
+  key to the signature on the Bitcoin. This ensures validity of the transaction while
+  maintaining anonymity, as the signature itself is the result of a one-way hash: the
+  actor in the transaction cannot be easily determined from the signature, only verified
+  (Reid).</span></p>
+
+  <p class="c0"><span>Bitcoin further increases anonymity by separating Bitcoin wallet
+  addresses that store Bitcoins from the identities of the wallet owners. Any user can
+  generate an almost unlimited number of Bitcoin addresses. In fact, many Bitcoin wallet
+  client programs encourage users to generate a new address for every transaction that
+  they make ("How Bitcoin works&rdquo;). A traditional bank client has a set amount of
+  accounts linked to their name and must depend on the bank to keep their ownership
+  private. A Bitcoin user can change their bank account every time they receive or
+  transfer Bitcoins.</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c3 c5">Technologic Dilemmas</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c3">The Security of Cryptographic Hashing and Network
+  Verification</span></p>
+
+  <p class="c0"><span>The Bitcoin protocol currently ensures the security and anonymity
+  of transactions in the Bitcoin system using the SHA-256 hashing algorithm . This
+  algorithm is accepted to be secure because current computing theory has not found a way
+  to reasonably reverse the hashing algorithm (Yang, &ldquo;The Cryptography of
+  Bitcoin&rdquo;). It is the same kind of state of the art cryptography used by modern
+  banking institutions (Yang, &ldquo;Bitcoin is Not Decentralized&rdquo;).</span></p>
+
+  <p class="c1 c7"></p>
+
+  <p class="c2"><span class="c3">The Human Element</span></p>
+
+  <p class="c0"><span>The algorithm can be trusted to give anonymity to those involved in
+  a transaction, but it depends on the user keeping their wallet addresses secure (Reid).
+  Once an identity is compromised, that identity can be linked to any Bitcoin transaction
+  that it underwent. This means that the privacy and security of a Bitcoin transaction
+  depends as much on the user following safe protocols as it does on the technology to
+  carry out those protocols.</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c3">No Cryptographic Hash Lasts Forever</span></p>
+
+  <p class="c0"><span>Another weakness in Bitcoin privacy and security is that no
+  cryptographic hash function can 100% guarantee security. The short course of computer
+  science history has seen many cryptographic functions broken long before their creators
+  believed they would be invalidated. For example, MD5 is a popular hash function that
+  was &ldquo;broken&rdquo; and rendered cryptographically insecure only a few years after
+  its release (Aurora).</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c3">There is No Such Thing as Perfect</span></p>
+
+  <p class="c0"><span>The ethical issue that arises as a result of Bitcoin&rsquo;s
+  technology is that the Bitcoin network does its best to give anonymity and integrity of
+  transactions to its users, but it cannot guarantee them entirely. It would be
+  unreasonable for any system to guarantee 100% safety for its participants. Nonetheless,
+  it is important for users to take these unknowns into their decision making process
+  when it involves something as important as their finances.</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c3">&ldquo;Decentralized&rdquo; Centrality: Timestamp
+  Servers</span></p>
+
+  <p class="c2"><span>&nbsp; &nbsp; &nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Double counting of transactions
+  is a small but significant problem for Bitcoin. In a traditional banking system this is
+  handled by a central authority that ensures no transaction is made twice. This check is
+  a challenging thing to achieve in a decentralized system such as Bitcoin. In fact, it
+  is actually not solvable without some sort of ad hoc centralized system.</span></p>
+
+  <p class="c0"><span>Bitcoin&rsquo;s solution is a system of timestamp servers that
+  verify transactions according to the time of their execution, so that no Bitcoin can be
+  double counted. These servers additionally verify Bitcoin transactions by checking
+  digital signatures. In order to perform valid checking, these servers give a
+  &ldquo;proof-of-work&rdquo; statement that is verified by other servers in the network
+  in turn (Nakamoto).</span></p>
+
+  <p class="c0"><span>These transaction servers are not directly centralized, but are
+  instead crowdsourced by delegating the work to the computers of Bitcoin users that act
+  as transaction servers. In exchange for supporting the integrity of the network, users
+  are randomly rewarded an amount of Bitcoins in the course of performing verification.
+  This is what the Bitcoin community refers to as &ldquo;mining.&rdquo;</span></p>
+
+  <p class="c1 c7"></p>
+
+  <p class="c2"><span class="c3">The Bitcoin Foundation: A Central Authority for a
+  Decentralized System?</span></p>
+
+  <p class="c0"><span>The authority which sets the rate at which Bitcoins can be
+  mined</span><span>, is called the</span> <span>Bitcoin Foundation. The
+  foundation&rsquo;s website says that the &ldquo;Foundation standardizes, protect and
+  promotes the use of Bitcoin cryptographic money for the benefit of users
+  worldwide&rdquo; (&ldquo;The Bitcoin Foundation&rdquo;). In addition to setting the
+  rate of bitcoin mining, the organization also maintains Bitcoin&rsquo;s open source
+  code. The organization presents an interesting dilemma as a central authority for a
+  &ldquo;decentralized&rdquo; system. Only time will tell what role it will play in
+  Bitcoin&rsquo;s future and if the currency can still be kept successfully decentralized
+  when a single organization has the potential to exert a significant amount of
+  control.</span></p>
+
+  <p class="c1 c7"></p>
+
+  <p class="c2"><span class="c3">Dilemma of Abolishing Trust</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span>&nbsp; &nbsp; &nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The implementation of Bitcoin
+  does not simply make trust obsolete, but in fact discourages trust by concealing
+  identity through signatures. If a user wanted to reveal their actual identity with
+  their signature, then all past and future transactions of theirs no longer are
+  anonymous because they share the same private key that generated the
+  signature.</span></p>
+
+  <p class="c2"><span>&nbsp; &nbsp; &nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Additionally, anonymous
+  transactions imply that transactions cannot be properly tracked, that the goods or
+  services involved cannot be known. This in turn implies that governments cannot
+  properly track, verify, or tax Bitcoin transactions (Reid, Jackson, &ldquo;26 USC
+  &sect; 61 - Gross income defined&rdquo;).</span></p>
+
+  <p class="c2"><span>&nbsp; &nbsp; &nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Another counter to
+  Bitcoin&rsquo;s decentralized ideals is that the Bitcoin network, while consisting of
+  crowdsourced servers, is maintained by the Bitcoin Foundation. All Bitcoin software is
+  written and updated by the Bitcoin Foundation, including verification and proof-of-work
+  checking. Thus, the integrity of the Bitcoin network relies on the idea that the users
+  of it trust the Bitcoin Foundation to not abuse Bitcoin for their own personal
+  gain.</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c3">Major Ethical Issues In Bitcoin Implementations:
+  Trusting Third-Party Bitcoin Handlers</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Many Bitcoin
+  transactions are routed by the owners of Bitcoin wallets through a third-party
+  transaction system, often a &ldquo;Bitcoin exchange&rdquo; of sorts that handles the
+  difficulties of creating and verifying transactions on behalf of the user
+  (&rdquo;Virtual Currency Schemes&rdquo;). The problem, however, is that many of these
+  third-party vendors do not handle users&rsquo; Bitcoin information securely. While the
+  cryptographic system of Bitcoin itself is somewhat secure, major security flaws exist
+  in many Bitcoin exchanges, of which a number have been hacked and Bitcoin information
+  worth millions of US dollars has been stolen (&ldquo;List of Major Bitcoin Heists,
+  Thefts, Hacks, Scams, and Losses&rdquo;).</span></p>
+
+  <p class="c2"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The ethical
+  dilemma, then, is that using one of these Bitcoin exchanges breaks the entire Bitcoin
+  paradigm of abandoning the need to trust others in favor of cryptographic proof. The
+  use of an exchange requires the user to have trust in that exchange to not steal their
+  personal Bitcoin information and to have proper security to reduce vulnerability to
+  hacking attempts. One could argue that one needs to trust a Bitcoin exchange even more
+  than a &ldquo;mainstream&rdquo; bank in the American financial system. While federal
+  banks are FDIC insured, Bitcoin exchanges are not, and one cannot necessarily claim
+  insurance on a Bitcoin wallet in the same way as is possible in a federal bank. In this
+  case, surprisingly, the deregulation and anonymity of the Bitcoin financial system
+  requires that users have more trust in one another than they would in a more
+  traditional banking system.</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c3 c5">Virtual Money in the Real World</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c3">The Challenges of Using a Virtual Currency in the Real
+  World</span></p>
+
+  <p class="c0"><span>Despite being originally designed as a digital currency intended
+  for online transactions, more and more physical retail locations are beginning to
+  accept Bitcoin for purchases. In theory, there shouldn&rsquo;t be any issue with this;
+  in the same way that a customer can use Square or PayPal to directly transfer funds
+  digitally, they should also be able to transfer Bitcoins to the vendor. However, the
+  Bitcoin protocol presents a few challenges.</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c3">Verification time</span></p>
+
+  <p class="c2"><span class="c3">&nbsp; &nbsp; &nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>Although a user is able to
+  instantaneously broadcast his or her intent to transfer Bitcoins from one wallet to
+  another, whether or not this transfer is successful is not verified until ten to sixty
+  minutes later.</span> <span class="c9">This delay is an inherent feature of the Bitcoin
+  protocol and does not appear to be patchable.</span> <span>For retailers where goods
+  must be exchanged immediately, this delay opens the doors to a poor experience for
+  customers attempting to use Bitcoins, or worse, fraudulent purchases. Such lag times do
+  exist in other forms of payment, such as credit cards, but the risk is mitigated by
+  intermediaries (Stephy). It&rsquo;s unclear if a new transaction paradigm where vendors
+  assume all of the fraud risk will be viable for brick-and-mortar stores.</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c3">PoS Systems</span></p>
+
+  <p class="c2"><span class="c3">&nbsp; &nbsp; &nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>The tech-savvy Internet
+  counter-culturists that currently use and advocate Bitcoin may have no problem
+  installing the software, setting up their wallet, and transferring funds between
+  accounts, but minimum-wage employees and average joes attempting to complete a
+  transaction using Bitcoin, the process might not seem so easy. If coins are sent to the
+  wrong address, there is no way of retrieving them or doing a chargeback.</span>
+  <span class="c9">Transactions on Bitcoin are irreversible.</span> <span>To mask some of
+  this complexity, various PoS systems such as Bitpay attempt to simplify the process by
+  providing a GUI and API that remove many of the complexities of transferring Bitcoins
+  and converting those Bitcoins to different currencies. However, they also increase the
+  standard transaction fees and remove some of the anonymity of the protocol, making
+  Bitcoin more like a standard currency. This hits at the crux of one of the issues with
+  Bitcoin; it trips over some of its high-brow theory when implemented in the real
+  world.</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c3">Taxation</span></p>
+
+  <p class="c2"><span class="c3">&nbsp; &nbsp; &nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>According to U.S. tax
+  code, all Bitcoin transactions should be taxed like any normal transaction (&ldquo;26
+  USC &sect; 61 - Gross income defined&rdquo;). &nbsp;However, Bitcoin transactions raise
+  numerous unique issues. From a practical standpoint, it&rsquo;s unclear when and how
+  Bitcoins should be taxed. Because transactions are anonymous and a user can have
+  multiple wallets, one could quite easily hide any Bitcoin revenue from the IRS. The
+  wallet of the coffee shop down the street would look no different from the wallet of a
+  Dutch citizen, for example. The two might only differ by time and number of transfers,
+  neither of which would necessarily imply that a wallet is owned by a U.S. company.
+  Additionally, it&rsquo;s unclear when in this process taxation should occur. Taxes are
+  generally applied when a user converts their Bitcoins to USD via a conversion service,
+  but as the Bitcoin exchange rate is still quite volatile, a user can miss a few
+  thousand dollars in taxes simply by cashing out to USD at a time when the exchange rate
+  is most beneficial.</span></p>
+
+  <p class="c2"><span>&nbsp; &nbsp; &nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;From another view, it&rsquo;s
+  questionable one should even attempt to tax Bitcoin transactions in the first place. It
+  is certainly understandable when Bitcoins are being converted to USD, as that
+  represents verifiable income in the shape of U.S. currency. However, consider a
+  scenario in which a business is able to pay all of its costs in Bitcoins and only
+  accepts Bitcoins from patrons. Say, its suppliers, landlords, employees, etc. all
+  accept Bitcoins as payment. Although the business might operate in the United States,
+  it uses entirely virtual currency, so how should it be taxed, if at all?</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c3 c5">Circumventing Authority</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c3">Circumventing Authority with Bitcoins</span></p>
+
+  <p class="c2"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The dual nature of
+  anonymity and untracability make Bitcoin a prime vehicle to circumvent authority.
+  Whether or not the motivation for avoiding higher powers is justified has become one of
+  the hottest debates among Bitcoin commentators.</span></p>
+
+  <p class="c1"></p>
+
+  <p class="c2"><span class="c3">Illicit Transactions</span></p>
+
+  <p class="c2"><span class="c3">&nbsp; &nbsp; &nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>When discussing the use of
+  Bitcoins in commerce, illicit transactions are an inevitable topic. Bitcoin&rsquo;s
+  anonymity and untraceability make it similar to its physical cash equivalents as an
+  unintentional facilitator of illegal transactions. Can Bitcoin be held accountable when
+  it is used for societal ills?</span></p>
+
+  <p class="c0"><span>The site called &ldquo;Silk Road&rdquo; is a case example. The
+  nearly three-year-old site, only accessible through the pseudo-anonymous Internet
+  protocol Tor, is the world&rsquo;s largest Bitcoin marketplace. By being anonymous for
+  both sellers and buyers, Silk Road almost welcomes the kind of clientele who are after
+  its most popular items: illegal drugs. While Silk Road does dabble in almost any other
+  illegal good you can think of, from forged IDs and banned books to weapons and
+  commissioned poems, its bread and butter is the Drugs section, which boasts seven times
+  as many listings as the next popular category (&ldquo;Using Silk Road&rdquo;). For this
+  reason, many U.S. Congressmen and women are aggressively attempting to squash the site.
+  However, because the owner of Silk Road is anonymous and Tor sites cannot be blocked by
+  ISPs, law enforcement is resorting to attempting to intercept illegal packages as they
+  enter the U.S. mail system and arrive at the purchaser&rsquo;s doorstep. This method
+  becomes ineffective though as soon as the goods become digital as well, if the buyer
+  purchases child pornography, for example.</span></p>
+
+  <p class="c0"><span>Legality of the Silk Road aside, being all-online, all-Bitcoin
+  marketplaces present its own challenges. Buyers have no real recourse if their
+  transaction goes sour, as the Bitcoin protocol has no way to reverse transfers.
+  Although sellers must pay a fee to register for the site and users are allowed to rate
+  sellers after purchasing, there is still a high potential for fraud simply due to the
+  entirely anonymous nature of the site.</span></p>
+
+  <p class="c1 c7"></p>
+
+  <p class="c2"><span class="c3">Gambling</span></p>
+
+  <p class="c0"><span>Given the current ban on online gambling in the United States,
+  websites that offer such services seem like a perfect fit for an anonymous digital
+  currency like Bitcoin. Indeed, a few sites like StrikeSapphire and BC-Casino have
+  sprung up, but surprisingly, they haven&rsquo;t had customers flocking to them as one
+  might expect them to in the current black market. Some cite the irreversibility of
+  Bitcoin transfers as a major flaw in the platform that is keeping gamers away from
+  Bitcoin. Other sites are also reluctant to begin accepting them due to the increased
+  security risk; if the site is hacked, wallet numbers could potentially be erased or
+  stolen, leaving no way of getting them back. However, according to one site owner,
+  users who try Bitcoin generally stick with it in the future, while others continue to
+  hop from payment platform to payment platform (Stradbrooke). He claims that users (and
+  sites) enjoy the low transactions fees on Bitcoin, as well as the ability to easily
+  move money from a site, an issue that cropped up when sites like Full Tilt Poker had
+  their assets seized by U.S. Department of Justice in 2011. Players found the thousands
+  of dollars they had put into the game&rsquo;s servers locked up and inaccessible during
+  the investigation (Stradbrooke).</span></p>
+
+  <p class="c2"><span>&nbsp; &nbsp; &nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In some respects, online gambling with
+  Bitcoins is equivalent to online gambling using Zynga points or any other digital
+  currency. Although the currencies are not directly linked to the currency of any
+  government, third parties are willing to exchange physical currencies for balances of
+  these digital currencies, giving them substantial value.</span></p>
+
+  <p class="c2"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Using Bitcoins in
+  sites like these also raises issues around the responsibility of data security and data
+  breaches. When personal data is stolen on most sites, there are steps that can be taken
+  to reduce the fallout; you can cancel your credit cards, avoid reusing passwords or
+  simply change login information on other sites, or just switch sites in the future to
+  avoid these kinds of issues. However, if a site is holding onto a user&rsquo;s Bitcoin
+  wallet and there is a security breach, those Bitcoins are as good as gone. That
+  number</span> <span class="c9">must</span><span>&nbsp;be reused on any other sites the
+  user is on, so diversifying passwords won&rsquo;t work here. The currency isn&rsquo;t
+  protected by a bank or government, so reimbursement isn&rsquo;t a possibility here.
+  Even if the company feels generous enough to reimburse their users, the user must start
+  an entirely new Bitcoin wallet. There&rsquo;s also no obvious limit to the theft; if I
+  put $100 into a poker site and the poker site is attacked, I will lose at most $100.
+  However, if that poker site is storing my Bitcoin wallet, the attackers basically have
+  access to my entire bank account.</span></p>
 
     </div> <!-- /container -->
+    </div>
+    </div>
 
     <div class="container-narrow">
 <div class="row-fluid marketing"> 
     <div id="bib" class="span12">
-  <style type="text/css">
+  <!--<style type="text/css">
 /*<![CDATA[*/
   ol{margin:0;padding:0}.c1{color:inherit;text-decoration:inherit}.c2{color:#1155cc;text-decoration:underline}.c9{padding:72pt 72pt 72pt 72pt}.c3{direction:ltr}.c7{text-align:right}.c4{height:11pt}.c0{font-style:italic}.c6{font-weight:bold}.c5{background-color:#ffffff}.c8{text-indent:36pt}.title{padding-top:24pt;line-height:1.15;text-align:left;color:#000000;font-size:36pt;font-family:"Arial";font-weight:bold;padding-bottom:6pt}.subtitle{padding-top:18pt;line-height:1.15;text-align:left;color:#666666;font-style:italic;font-size:24pt;font-family:"Georgia";padding-bottom:4pt}li{color:#000000;font-size:11pt;font-family:"Arial"}p{color:#000000;font-size:11pt;margin:0;font-family:"Arial"}h1{padding-top:24pt;line-height:1.15;text-align:left;color:#000000;font-size:18pt;font-family:"Arial";font-weight:bold;padding-bottom:6pt}h2{padding-top:18pt;line-height:1.15;text-align:left;color:#000000;font-size:14pt;font-family:"Arial";font-weight:bold;padding-bottom:4pt}h3{padding-top:14pt;line-height:1.15;text-align:left;color:#666666;font-size:12pt;font-family:"Arial";font-weight:bold;padding-bottom:4pt}h4{padding-top:12pt;line-height:1.15;text-align:left;color:#666666;font-style:italic;font-size:11pt;font-family:"Arial";padding-bottom:2pt}h5{padding-top:11pt;line-height:1.15;text-align:left;color:#666666;font-size:10pt;font-family:"Arial";font-weight:bold;padding-bottom:2pt}h6{padding-top:10pt;line-height:1.15;text-align:left;color:#666666;font-style:italic;font-size:10pt;font-family:"Arial";padding-bottom:2pt}
   /*]]>*/
-  </style>
+  </style>-->
 
 
 
